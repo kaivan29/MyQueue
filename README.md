@@ -1,9 +1,9 @@
 # MyQueue
 
 <img src="/screenshots/home_page.png" height = "450" width="270">
-![DARWIN](/screenshots/select_sources.png "Select Sources")
-![DARWIN](/screenshots/browse_netflix.png "Browse Netflix")
-![DARWIN](/screenshots/browse_hbo.png "Browse HBO")
-![DARWIN](/screenshots/browse_series.png "Browse Series")
-![DARWIN](/screenshots/myqueue.png "My Queue")
-![DARWIN](/screenshots/remove.png "Remove from Queue")
+<img src="/screenshots/select_sources.png" height = "450" width="270">
+<img src="/screenshots/browse_netflix.png" height = "450" width="270">
+<img src="/screenshots/browse_hbo.png" height = "450" width="270">
+<img src="/screenshots/browse_series.png" height = "450" width="270">
+<img src="/screenshots/myqueue.png" height = "450" width="270">
+<img src="/screenshots/remove.png" height = "450" width="270">
