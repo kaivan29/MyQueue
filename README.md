@@ -1,7 +1,6 @@
 # MyQueue
 
-![Home Page](/screenshots/home_page.png | width = 48)<!-- .element height="50%" width="50%" -->
-<img src="/screenshots/home_page.png" width="48">
+<img src="/screenshots/home_page.png" height = "100" width="100">
 ![DARWIN](/screenshots/select_sources.png "Select Sources")
 ![DARWIN](/screenshots/browse_netflix.png "Browse Netflix")
 ![DARWIN](/screenshots/browse_hbo.png "Browse HBO")
