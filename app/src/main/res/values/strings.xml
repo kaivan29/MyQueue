@@ -1,0 +1,106 @@
+<resources>
+    <string name="app_name">MyQueue</string>
+
+    <string name="create_failed">Incorrect email or password(must be at least 6 characters)</string>
+    <string name="auth_failed">Email or password incorrect</string>
+
+    <string name="new_user">New user? Create an account</string>
+    <string name="have_account">Have an account? Log in</string>
+
+    <string name="netflix_source">netflix</string>
+    <string name="hulu_source">hulu</string>
+    <string name="hbo_source">hbo</string>
+    <string name="amazon_source">amazon_prime</string>
+
+    <string name="pref_previously_started">previously_started</string>
+    <string name="pref_prev_selected">previously_selected</string>
+    <string name="pref_prev_on_login">previously_on_log_in</string>
+
+    <string name="welcome_text">Tap anywhere to continue</string>
+
+    <string name="select_source_from_settings">Please select the services you would like to be
+        included as options when browsing movies:</string>
+
+    <!-- static details data -->
+    <string name="details_rottenText">The tMDB Score:</string>
+    <string name="details_plotSummary">Plot Summary:</string>
+    <string name="details_available_sources">Available On</string>
+    <string name="details_bookmark">Add to Queue</string>
+    <string name="details_bookmark_delete">Remove from Queue</string>
+
+
+    <string name="details_queue_add"> added to Queue</string>
+    <string name="details_queue_already"> is already in Queue</string>
+    <string name="details_queue_delete"> removed from Queue</string>
+    <string name="details_queue_does_not_exist"> does not exist in Queue</string>
+
+    <!-- non static, should be changed case by case -->
+    <string name="details_plot">...</string>
+    <string name="details_rottenScore">-.-</string>
+
+    <string name="search_not_implemented">Search feature is not yet supported</string>
+    <string name="force_select_service">You must choose at least one service to browse</string>
+
+    <string name="faq">Instructions to use the app</string>
+
+    <string name="faq_q1">Browse Movies</string>
+    <string name="faq_q2">Browse Series</string>
+    <string name="faq_q3">Queue</string>
+    <string name="faq_q4">Select Sources</string>
+    <string name="faq_q5">Settings</string>
+
+    <string name="faq_a1">Browse for movies and click on them to get details about it. Add them to the queue if it is your favorite movie.</string>
+    <string name="faq_a2">Browse for series and click on them to get details about it. Add them to the queue if it is your favorite serie.</string>
+    <string name="faq_a3">Check your favorite movies and series that you saved in the queue</string>
+    <string name="faq_a4">You can choose from 4 different streaming services: Hulu, Netflix, HBOGo and Amazon Prime</string>
+    <string name="faq_a5">Go to our about page and read about us. You can also logout of the account.</string>
+
+    <string name="menu_browse">Browse</string>
+    <string name="menu_bookmarks">MyQueue</string>
+    <string name="menu_search">Search</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_sortBy">Sort By:</string>
+    <string name="menu_genre">Genre:</string>
+    <string name="menu_button_delete">Empty Queue</string>
+
+    <string name="sort_choose">Choose a Sort</string>
+    <string name="already_here">You\'re already there</string>
+
+    <string name="movie_detail_trailers">Trailers</string>
+
+    <string name="qué_paso">yeah that shouldn\'t happen</string>
+
+    <!-- descriptions -->
+    <string name="desc_favorites">Favorites</string>
+    <string name="desc_rating">Rating</string>
+
+    <string name="about"> Hola!\n
+        From the coolest Android development team. We are Erin, Saleh and Kaivan, computer science students,
+        at the University of Texas at Austin. Go Longhorns!.</string>
+
+    <string name="our_git">Hey, our git is currently set to private, but we\'ll open it up as soon
+        as we release our beta app.</string>
+    <string name="our_email">Also, we can reached over email here: myqueue@gmail.com</string>
+
+    <string name="online">online</string>
+    <string name="offline">offline</string>
+    <string name="no_connection">Could not reach the internet</string>
+    <string name="press_to_refresh">This feature will not work without a connection, please press on the button to refresh the page</string>
+    <string name="refresh">refresh</string>
+
+    <string name="my_queue_delete_conformation">Are you sure you want to delete the whole Queue?</string>
+
+    <!-- titles of activities (will be used in the app bar -->
+    <string name="activity_about">About US</string>
+    <string name="activity_faq">Instructions</string>
+    <string name="activity_login">Login</string>
+    <string name="activity_media">Media Details</string>
+    <string name="activity_menu">Main Menu</string>
+    <string name="activity_movies">Movies</string>
+    <string name="activity_q">Queue</string>
+    <string name="activity_search">Search</string>
+    <string name="activity_select">Select Sources</string>
+    <string name="activity_series">Series</string>
+    <string name="activity_settings">Settings</string>
+
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="sources">
+        <item>Netflix</item>
+        <item>Hulu</item>
+        <item>HBO</item>
+        <item>Amazon Prime</item>
+    </array>
+
+    <array name="settings_options">
+        <item>Instructions</item>
+        <item>About Us</item>
+        <item>Log Out</item>
+    </array>
+
+</resources>

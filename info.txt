@@ -1,0 +1,68 @@
+CS 371m - Mr.. Michael Scott
+May 3 2017
+
+a. Team Member Names and UT-EID:
+  Saleh Alghusson - soa322
+  Erin Jensby - elj467
+  Kaivan Shah - kks942
+
+b. Special Instructions:
+- The app should function without any prior pre requirements.  One needs an android phone with at least android 4.0 while the app is compiled with a target apk for android 6.0.
+- The user needs to create an account with a valid email address to access the app.
+- To browse through the movies/series, the app needs an active internet connection.
+
+c. Features/Use Cases Completed:
+- Welcome Screen - The screen will greet the user on their first time opening the app after download. However, it will only run the first time the app is ran.
+- Create Account/Login Screen - If the user needs to create an account then they can do so. If they are already a user then they can login into the app. The app does save user preferences in the cloud and Queues tied to their login information.
+- Select Sources Screen - After logging in, the user will be prompted to choose which streaming sources they would like to use. That user has to pick at least one source, and then they can also choose as many as they would like, even all the sources if they want to. The user can also change the sources later, by clicking on Choose Sources on the main menu.
+- Main Menu - Main activity of the application. From here the user will be able to navigate to any of the  screens below. Moreover, whenever the user wants to go back from any of the screens mentioned below, they will be brought to this activity.
+  - Movies Screen - Used to browse Movies. This activity will launch and pull movie information from Guide Box (the API) that we are using. And then display the list of movies, depending on the streaming source that the user chose. Also, at the top of the screen, there is a spinner option menu in which the user is able to change the streaming source and that will update the list of available movies.
+  - Series Screen - Used to browse TV series. This activity is similar to the movies activity mentioned above. The only difference is that this activity handles TV series instead of movies.
+    - Queue Screen - From this activity, the user will be able to access their queue. Which is the list of all movies and TV shows that the user has decided to bookmark or "queue". Each of the items in the queue can be clicked and the user will be taken to the activity below.
+    - Movie/TV Series Description - This activity shows the user detailed information about the movie/TV series. These information include: the poster, the name, the release year, the IMDB score and lastly the plot summary for a selected Movie or TV show. This activity will only be opened from on the previous two activities. From this activity, the user will be able to add a movie/TV show to their queue or removing it.
+  - Select Sources Screen - As described above.
+  - Settings Screen - From the settings screen, the user will be able to change the app's settings and preferences. The activities below can be launched from this activity.
+  - Instructions Screen - The instructions screen as it suggests is a simple screen with information on how to use the app. 
+  - About Us - Also a simple screen, which has some basic information about the devs and an email to contact us.
+  - Log Out - Log out the user from the app, this button will take the user to the Login screen where they can either log back in or create a new user.
+
+d. A list of features / use cases from our application prototype (assignment 3) that we did not complete:
+- A tap bar or a hamburger menu.
+- Sorting
+- Search
+
+e. A list of features / use cases we added that were not part of the application prototype
+- We implemented a Main menu instead of a tap bar.
+- User can create an account; login functionality 
+
+f. Classes and Major Chunks of Code Obtained From Other Sources:
+- Dr. Michael Scotts TicTacToe code was referenced when writing about_layout
+- SourcesFragment class inside SelectSourcesActivity and SettingsFragment class inside Settings activity were written by heavily referencing TitlesFragment class in the FragmentExample code on Dr. Michael Scotts github.
+- Referenced this when adding Toolbar
+  https://developer.android.com/training/appbar/setting-up.html#add-toolbar
+- Layout help came from stackoverflow.com, especially in media_details_layout.xml.
+- Created the GridView Layout and loading pages from internet by following this tutorial. In our case the link to the images was provided by the API. And I borrowed GridItem & GridViewAdapter from the tutorial:
+http://stacktips.com/tutorials/android/download-and-display-image-in-android-gridview
+- To fix the failed-binder-transaction, I took help of this stackoverflow post: http://stackoverflow.com/questions/36007540/failed-binder-transaction-in-android
+- Singleton design in android for non activity class:
+http://stackoverflow.com/questions/14057273/android-singleton-with-global-context
+- SharedPrefrences help from here:
+http://stackoverflow.com/questions/10393273/using-sharedpreferences-across-multiple-classes
+- Checking for internet access help came from here
+http://stackoverflow.com/a/6987498
+- Learned how to make calls to API, parse the JSON data and store them in Java objects: https://www.udacity.com/course/new-android-fundamentals--ud851
+- Firebase tutorial: https://firebase.google.com/docs/
+
+g. Classes and Major Chunks of Code Completed ourselves:
+- AboutActivity.java & about_layout.xml
+- FAQActivity.java & faq_layout.xml
+- LoginActivity.java & login_layout.xml
+- MediaDetailsActivity.java & media_details_layout.xml
+- MenuActivity.java & menu_layout.xml
+- Queue.java & QueueActivity.java & my_queue_layout.xml
+- SelectSourcesActivity.java & select_sources_layout.xml (aside from SourcesFragment
+  class)
+- SettingsActivity.java & settings_layout.xml (aside from Settings Fragment class)
+- WelcomeActivity.java & welcome_layout.xml
+- MoviesActivity.java & SeriesActivity.java & browse_layout.xml and grid_item_layout.xml
+- Result.java, Movies.java, tMDB.java, HelperSharePreferences.java

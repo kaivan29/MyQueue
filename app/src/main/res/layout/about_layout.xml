@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/about_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".AboutActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/about_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:titleTextColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <ScrollView
+        android:id="@+id/fragment_detail_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/layout_root"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:padding="5dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="@color/white"/>
+
+        <ImageView
+            android:id="@+id/about_image"
+            android:scaleType="centerInside"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_gravity="center" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="@color/white"/>
+
+        <TextView
+            android:id="@+id/about_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/about"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:textSize="20sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@color/white"/>
+
+        <TableLayout
+            android:id="@+id/contact_table"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal">
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:minHeight="120dp"
+                android:stretchColumns="0,1"
+                android:layout_marginLeft="5dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/git_text"
+                    android:layout_width="250dp"
+                    android:layout_height="match_parent"
+                    android:ellipsize="none"
+                    android:text="@string/our_git"
+                    android:textSize="20sp" />
+                <ImageView
+                    android:id="@+id/git_pic"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginBottom="25dp"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:src="@drawable/github" />
+                <!-- picture from
+                 https://visola.github.io/2012/11/12/dao-repository-and-service-digging-deeper/
+                -->
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/contact_email"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ellipsize="none"
+            android:text="@string/our_email"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

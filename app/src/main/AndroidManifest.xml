@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cs371m.myqueue">
+    <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="23"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"  />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"  />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        android:largeHeap="true"
+        android:hardwareAccelerated="false">
+        <!--
+            Comment by saleh:
+                Added these two last lines from this stackoverflow reply, not sure if they good or not
+                http://stackoverflow.com/questions/32244851/androidjava-lang-outofmemoryerror-failed-to-allocate-a-23970828-byte-allocatio
+        -->
+
+        <activity
+            android:name=".WelcomeActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".SelectSourcesActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+
+        <activity
+            android:name=".MenuActivity"
+            android:screenOrientation="portrait">
+            <!-- <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter> -->
+        </activity>
+
+        <activity
+            android:name=".MoviesActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".SeriesActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MediaDetailsActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".QueueActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <!-- Allow the Settings activity to be launched -->
+        <activity
+            android:name=".SettingsActivity"
+            android:screenOrientation="portrait"
+            android:label="Settings">
+        </activity>
+
+        <activity
+            android:name=".AboutActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".FAQActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+    </application>
+
+</manifest>

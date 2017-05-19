@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <CheckBoxPreference
+            android:key="netflix"
+            android:title="Netflix"
+            android:defaultValue="true"/>
+        <CheckBoxPreference
+            android:key="hulu"
+            android:title="Hulu"
+            android:defaultValue="false"/>
+        <CheckBoxPreference
+            android:key="hbo"
+            android:title="HBO GO"
+            android:defaultValue="false"/>
+        <CheckBoxPreference
+            android:key="amazon"
+            android:title="Amazon Prime"
+            android:defaultValue="false"/>
+
+</PreferenceScreen>
