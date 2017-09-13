@@ -1,5 +1,10 @@
 # MyQueue
 
+##Team
+-Me
+-Saleh
+-Erin
+
 ## App Idea:
 Idea came from personal experience spending lots of time looking for a show or movie to watch on different streaming services like Netflix/Amazon/Hulu and forgetting about movies or shows that I had planned to watch.
 
